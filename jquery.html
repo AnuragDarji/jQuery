@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- CDN link -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <style>
+        p {
+            border: 1px solid black;
+            padding: 30px;
+            background-color: antiquewhite;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="demo">Hello World!</h1>
+    <!-- <button class="btn">Click Me</button> -->
+
+    <!-- <button id="btn1">Start sliding</button> -->
+    <!-- <button id="btn2">Stop sliding</button> -->
+
+    <button id="btn1">Show text</button>
+    <button id="btn2">Show html</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui voluptatem architecto sed,
+        blanditiis accusamus perferendis animi nesciunt voluptatum dignissimos eos velit quasi illo deleniti minima
+        delectus harum? Labore, nemo!</p>
+
+    <p id="para">This is some <b>bold</b> text in a paragraph.</p>
+    <br />
+    <br />
+
+    Name: <input type="text" id="test" value="Mickey Mouse" />
+    <button id="btn3">Show value</button>
+
+    <br />
+    <br />
+    <div style="background: blue;height:100px;width:100px;position:absolute;"></div>
+
+    <script>
+        // Events
+        // $(document).ready(function () {
+
+        // $("button").click(function () {
+        //     $("h1").hide();
+        // });
+
+        // $("button").dblclick(function () {
+        //     $("h1").show();
+        // });
+
+        // $("button").mouseenter(function () {
+        //     console.log("mouse enter.")
+        // });
+
+        // $("button").mouseleave(function () {
+        //     console.log("mouse leave");
+        // });
+
+        // $("button").mousedown(function () {
+        //     console.log("mouse down");
+        // });
+
+        // $("button").mouseup(function () {
+        //     console.log("mouse up");
+        // });
+        // });
+
+        // hide/show method
+        // syntax: .hide(speed, callback)
+
+        // slide
+        // $(document).ready(function () {
+        // $("button").click(function () {
+        //     $("p").slideDown("slow");
+        // });
+
+        // $("button").click(function () {
+        //     $("p").slideUp("slow");
+        // });
+
+        //     $("button").click(function () {
+        //         $("p").slideToggle("slow");
+        //     });
+        // });
+
+        // Animate
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("div").animate({ left: '250px' });
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        // $("button").click(function () {
+        //     $("div").animate({
+        //         left: '250px',
+        //         opacity: '0.5',
+        //         height: '150px',
+        //         width: '150px'
+        //     });
+        // });
+
+        // $("button").click(function () {
+        //     var div = $("div");
+        //     div.animate({ height: '300px', opacity: '0.4' }, "slow");
+        //     div.animate({ width: '300px', opacity: '0.8' }, "slow");
+        //     div.animate({ height: '100px', opacity: '0.4' }, "slow");
+        //     div.animate({ width: '100px', opacity: '0.8' }, "slow");
+        // });
+        // });
+
+        // stop()
+        // $(document).ready(function () {
+        //     $("#btn1").click(function () {
+        //         $("p").slideDown(5000);
+        //     });
+        //     $("#btn2").click(function () {
+        //         $("p").stop();
+        //     });
+        // });
+
+        // callback
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("p").hide("slow", function () {
+        //             alert("The paragraph is now hidden");
+        //         })
+        //     })
+        // })
+
+        // Chaining
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("p").css("color", "red")
+        //             .slideUp(2000)
+        //             .slideDown(2000);
+        //     });
+        // });
+
+        // Get - text(), html(), val()
+        // $(document).ready(function () {
+            //     $('#btn1').click(function () {
+            //         alert("Text: " + $("#para").text());
+            //     });
+            //     $('#btn2').click(function () {
+            //         alert("Html: " + $("#para").html());
+            //     });
+            // $('#btn3').click(function () {
+            //     alert("Value: " + $("#test").val());
+            // });
+        // });         
+
+    </script>
+</body>
+
+</html>
